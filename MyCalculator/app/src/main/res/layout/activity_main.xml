@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <EditText
+        android:id="@+id/editTextnumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number 1"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:inputType="number"
+         />
+    <EditText
+        android:id="@+id/editTextnumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number 2"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/buttonplus"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@color/black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/buttonminus"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/buttontimes"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/buttondivided"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/textView_result"
+        android:textSize="30dp"
+
+        />
+
+</LinearLayout>
